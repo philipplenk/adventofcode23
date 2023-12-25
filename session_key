@@ -1,0 +1,2 @@
+Copy your own session key into this file to use my scripts(and - obviously - delete this explanation). 
+To obtain it, simply login to the aoc website in your favourite browser, open the inspector(for instance via tools->web developer->inspector in firefox) and look for the "session" cookie (in firefox you can find this on the "storage" tab)
