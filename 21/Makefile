@@ -9,13 +9,16 @@ all: 01 02
 	$(CXX) $(CFLAGS) $(INCLUDE_PATH) $(LIBS) $< -o $@
 	
 clean:
-	rm -f 01 02
+	rm -f 01 02 02_hashlife
 	
 run1: 01
 	cat input | ./01
 	
 run2: 02
 	cat input | ./02
+	
+run_hashlife: 02_hashlife
+	cat input | ./02_hashlife
 	
 submit1: 01
 	submit_result.sh 1 $(shell cat input | ./01)
